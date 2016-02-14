@@ -41,3 +41,22 @@
 					$('table tr')
 		* Here selects all tr elements that are descendants of the table element.
 		* Descendants are  children,grandchildren,etc of the designated ancestor element.
+## Selectings node by ID
+	- In Javascript we using document.getElementByID.
+	- use the # character used to select the particular id.
+	- $('#myIdName')
+
+## Selecting Nodes by Class Name
+	- Use the . character to select elements by class name
+	- $(.myClassName)
+	- selects <p class="myClassName"> element
+	- Use multiple class names use , to separate the class
+	- $('.blueDiv,.redDiv')
+	- $(a.myClassName) - select only <a> tags with myClassName
+## Selecting Nodes by Attribute value
+	-Use brackets[attribute] to select based on attribute name and/or attribute value:
+		-$('a[title]')  Select all <a> elements that have a title attribute
+		- $('a[title="Programming Info"]')
+			- Select all programing elements that have a "Programming Info" title attribute value.
+
+

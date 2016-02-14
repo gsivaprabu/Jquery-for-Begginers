@@ -18,39 +18,21 @@
     </style>
     <script src="../libs/jquery-2.2.0.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        var div = $('div');
-        alert(div.length);
-
-    });
-    $(document).ready(function() {
-        var imgs = $('img');
-        console.log("Image length : " + imgs.length);
-    });
-    $(document).ready(function() {
-        var divsCollection = $('div span');
-        divsCollection.css('background-color', 'green')
-    });
-
-    $(document).ready(function() {
-        var divsCollection = $('div,span');
-        console.log("<div> & <span> tags : " + divsCollection.length);
-        alert("Are you change the font-size ?")
-        divsCollection.css('font-size', 'xx-large')
-    });
-
-    $(document).ready(function() {
-        var divsCollection = $('div');
-        $('div').each(function() {
-            alert($(this).html());
-        });
-    });
+	   $(document).ready(function(){
+	   	var divValues = $('#TestDiv').html()
+	   	alert(divValues);
+	   });
     </script>
 </head>
 
 <body>
     <div id="TestDiv" title="Div Title asdf asdfsdf asdf">
-        This is my div text
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
     <div title="Contains Table">
         <table id="DataTable">
