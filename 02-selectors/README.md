@@ -59,4 +59,9 @@
 		- $('a[title="Programming Info"]')
 			- Select all programing elements that have a "Programming Info" title attribute value.
 
+## Selecting Input Nodes
+	-$(':input') select all input elements including: input,select,textarea,button,image,radio and more
+	 $(':input[type="radio"]')
+	- targrt all radio buttons on the page.. but it is the most efficent selector.
 
+## Additional Selector Features
