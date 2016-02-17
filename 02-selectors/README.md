@@ -65,3 +65,41 @@
 	- targrt all radio buttons on the page.. but it is the most efficent selector.
 
 ## Additional Selector Features
+	- Selectors based on specific tag name.
+	- using contains in selector
+	- :contains() will select elements that match the contents with the contains exception.
+
+			$('div:contains("sivaprabu")')
+
+	- select the div's that contain the text sivaprabu (note that the match in case sensitive)
+	- <div> I love javascript by sivaprabu </div>
+
+	- Selecting Even or Odd rows in a table
+	- $('tr:odd') and$('tr:even') is the jQuerysyntax for selecting odd or even rows respectively.
+	- Remember the index is 0 based - the first two row in the table is 0:
+		- Odd will return [1,3,5,7,9]..etc
+		- Even will return [0,2,4,6,8]..etc
+
+		-	Selecting the First Child
+			-$('element:first-child') select the first child of every element group.
+			-$('span:first-child')
+
+									<div>
+										<span>First Child, First Group</span>
+										<span>Second Child, First Group</span>
+									</div>
+									<div>
+										<span>First Child</span>
+										<span>Second Child, Second Group Child </span>
+									</div>
+	- Using start with in selectors
+
+	- [attribute^="value"] will select all elements with an attribute that  begins with stated value.
+	- [attribute*="value"] will select all elements with an attribute that  an attribute with stated value.
+
+	- $('input[value^="Events"]')
+	- select any input element whose value attribute begins with "Events":
+
+		<input type="button"value="Events - World"/>
+		<input type="button"value="Events - National"/>
+		<input type="button"value="Events - Local"/>
