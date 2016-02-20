@@ -114,3 +114,14 @@
 				<input type="button" value="World Events 2011">
 				<input type="button" value="National Events 2011">
 				<input type="button" value="Local Events 2011">
+
+## Hints
+
+	- Selectors allow any type of HTML element to be located in an HTML page.
+	- key jQuery selectors include
+			* [ # ] for ID selections
+			* [ . ] for CLASS selections
+			* [ ^ ] for attribute starting with a value.
+			* [ $ ] for attribute ending with a value.
+			* [ * ] for attribute containing with a value.
+	- Mastering selector is the key to being productive with jQuery!
