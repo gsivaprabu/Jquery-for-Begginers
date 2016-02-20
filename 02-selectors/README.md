@@ -103,3 +103,14 @@
 		<input type="button"value="Events - World"/>
 		<input type="button"value="Events - National"/>
 		<input type="button"value="Events - Local"/>
+
+	- Find attributes containing a value
+		[attribute*="value"] will select all elements with an attribute that contain the stated value:
+
+			$('input[value*="Events"]')
+
+			select any input element whose value attribute contains "Events":
+
+				<input type="button" value="World Events 2011">
+				<input type="button" value="National Events 2011">
+				<input type="button" value="Local Events 2011">
