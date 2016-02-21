@@ -22,6 +22,6 @@
 		$('div').each(function(index,elem){
 				alert(index+'='+$(elem).text());
 			})
-### elem = this
+### elem = this values are same
 
 
