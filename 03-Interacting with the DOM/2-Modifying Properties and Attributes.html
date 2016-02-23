@@ -24,30 +24,32 @@
     }
     </style>
     <script>
-    // each functionality
-    $(document).ready(function() {
-        var divs = $('div.BlueDiv,div.RedDiv'),
-            output = $('#OutputDiv');
-        console.log(output);
-        divs.each(function(index, e) {
-            console.log('Index value => '+ index + ', e => ' + e + ', this.(text) => ' + $(this).text());
-            output.html(output.html() + "<br/>" + index + "" + $(this).text());
-            // output.html(output.html() + "ads <br>");
-        });
-    });
-    // each functionality
+    /*  $(document).ready(function() {
+                    var divs = $('div');
+                    divs.each(function(index) {
+                        //this.title = "Temp Title";
+                        $(this).attr('title', 'Temp Title-II');
+                    });
+        });*/
 
     /*    $(document).ready(function() {
-            var divs = $('div.BlueDiv,div.RedDiv'),
-                htmlAppendValue = '';
-            console.log(divs);
-            divs.each(function(index, el) {
-                htmlAppendValue += index + " => " + $(this).text()+"<br>";
-            });
-            console.log(htmlAppendValue);
-            var OutputDiv = $('#OutputDiv');
-            OutputDiv.html(htmlAppendValue);
+        	// $('div').css('background-color', 'red');
+        	$('div').attr(
+        	{
+        		title: 'Title 3',
+        		style:'background-color: yellow;color:black;'
+        	}
+        	);
         });*/
+
+    $(document).ready(function() {
+        $('div')
+            .attr({
+                title: 'Title 4'
+            })
+            .css('color', 'blue')
+            .css('font-size', '20pt')
+    });
     </script>
 </head>
 
