@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selectors in jQuery</title>
+    <style type="text/css">
+    .BlueDiv {
+        background-color: Navy;
+        color: White;
+        width: 200 px;
+    }
+
+    .RedDiv {
+        background-color: Red;
+        color: White;
+        width: 200 px;
+    }
+    </style>
+    <script src="../libs/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript">
+	   $(document).ready(function(){
+	   	var divValues = $('#TestDiv').html()
+	   	alert(divValues);
+	   });
+    </script>
+</head>
+
+<body>
+    <div id="TestDiv" title="Div Title asdf asdfsdf asdf">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div title="Contains Table">
+        <table id="DataTable">
+            <tr>
+                <td>Cell 1 Row 1</td>
+            </tr>
+            <tr>
+                <td>Cell 1 Row 2</td>
+            </tr>
+            <tr>
+                <td>Cell 1 Row 3</td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="width:100%">
+                        <tr>
+                            <td>Nested Table Cell and Row</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    <div class="BlueDiv">
+        <span>Blue div</span>
+    </div>
+    <br />
+    <span class="BlueDiv">This is my blue span</span>
+    <br />
+    <div class="RedDiv">
+        <span>Red div</span>
+    </div>
+    <p>
+        <img src="images/logo.png" width="250px" height="80" />
+    </p>
+    <form id="form1">
+        <table style="width:300px;">
+            <tr>
+                <td style="width:30%;">First Name</td>
+                <td style="width:70%;">
+                    <input id="FirstNameTextBox" value="Sivaprabu" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>
+                    <input id="LastNameTextBox" type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td>
+                    <textarea rows="5" cols="60" id="CommentsTextBox">TextArea</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="sel">
+                        <option value="AZ">AZ</option>
+                        <option value="CA" selected="true">CA</option>
+                    </select>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="SubmitButton" type="button" value="Submit" />
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

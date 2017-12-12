@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Interacting with the DOM
+    </title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .BlueDiv {
+            background-color: #286090;
+            color: White;
+            width: 200px;
+        }
+        
+        .RedDiv {
+            background-color: #C9302C;
+            color: White;
+            width: 200px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            console.log('jQuery loaded ...');
+            $(".RedDiv").hide();
+            $(".BlueDiv").hide();
+
+            $("#blue").click(function() {
+                $(".RedDiv").hide();
+                $(".BlueDiv").show();
+            });
+            $("#red").click(function() {
+                $(".RedDiv").show();
+                $(".BlueDiv").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <br>
+
+    <div align='center'>
+        <br>
+        <br>
+        <button id="blue" class="btn btn-primary">Blue</button>
+        <button id="red" class="btn btn-danger">Red</button>
+        <br>
+        <br>
+        <div class="BlueDiv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam ea culpa mollitia odio maxime temporibus possimus recusandae error, vel amet voluptates eius itaque praesentium pariatur libero accusantium ullam, saepe distinctio!</div>
+        <div class="RedDiv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit fugiat, vero possimus exercitationem ullam, harum itaque veniam beatae alias tempore officiis voluptas rerum? Est cupiditate porro magnam ea iste.</div>
+    </div>
+</body>
+
+</html>

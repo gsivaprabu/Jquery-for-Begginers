@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Detecting when page is loaded using jQuery</title>
+    <script src="../libs/jquery-2.2.0.min.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+    window.onload = function() {
+        alert("Window onload call");
+    }
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        alert("Document ready call");
+        $('#myContent').html("DOM loaded");
+    });
+    alert("Simple Alert");
+    </script>
+    <div id="myContent">
+        This page implemented jQuery !!!
+    </div>
+</body>
+
+</html>
